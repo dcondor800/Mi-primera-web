@@ -63,7 +63,31 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul
+nav ul li a:hover {
+    color: #ffc107;
+}
 
+/* Estilos para las columnas de proyectos */
+.section#proyectos .column {
+    width: calc(33.33% - 20px); /* Tercio del ancho de la pantalla */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
 
+.section#proyectos .column:last-child {
+    margin-right: 0;
+}
 
+@media (max-width: 768px) {
+    .section#proyectos .column {
+        width: 100%; /* Columnas apiladas en dispositivos móviles */
+        margin-right: 0;
+    }
+}
